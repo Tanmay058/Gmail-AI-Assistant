@@ -1,0 +1,42 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Environments
+.env
+
+# Gmail Auth
+token.pickle
+# credentials.json  <-- We might need this for some cloud setups, but it's safer to exclude and use env vars.
+# For now, let's keep it in git if the user wants an easy setup, but standard practice is to exclude.
+# Given it's a private repo, let's exclude it to be safe and use instructions.
+credentials.json
+
+# Databases
+chroma_db/
+chromadb/
+
+# Logs
+*.log
+uvicorn.log
+
+# Frontend (Vite/Node)
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+.DS_Store
+# Sensitive scripts
+app/core/crypto.py
+migrate_to_encrypted_db.py
+verify_encryption.py
+
+# Local Chroma DB
+data/chroma_db/
+
